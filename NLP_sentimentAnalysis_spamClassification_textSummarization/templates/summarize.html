@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+
+<div class="container">
+	<section class="jumbotron text-center">
+	<div class="row">
+		<div class="col-sm-6">
+		<h1 class="jumbotron-heading">Text Summarization </h1>
+          <p class="lead text-black">
+            <h3><b>Himanshu Tripathi</b></h3>
+            <p>
+          Machine Learning and Data Science enthusiast, Android Developer, programmer and always willing to learn and work across new technologies and domains.</p></p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Follow me on GitHub</a>
+            <a href="#" class="btn btn-secondary my-2">Linkedin</a>
+          </p>
+         
+		</div>
+
+		<div class="col-sm-6">
+			<div class="container">
+				<form method="POST" action="/summarize">
+				<textarea name="message" class="form-control" cols="8" rows="8"></textarea>
+				<br>
+				<button class="btn btn-success" type="submit">Summarize</button>
+
+				<button style="margin-left: 10px;" class="btn btn-danger" type="reset">Reset</button>
+
+			</form>
+			<br>
+
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="alert alert-success">
+							{{ original }}
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<p class="alert alert-warning">
+							{{ prediction }}
+						</p>
+					</div>
+				</div>
+			</div>
+
+</div>	
+	<!-- form area -->
+	
+
+{% endblock %}

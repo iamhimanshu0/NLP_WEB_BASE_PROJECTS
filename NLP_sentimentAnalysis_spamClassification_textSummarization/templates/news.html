@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+
+<div class="container">
+	<section class="jumbotron text-center">
+	<div class="row">
+		<div class="col-sm-6">
+		<h1 class="jumbotron-heading">News Classifier </h1>
+          <p class="lead text-black">
+           
+            <p>
+         <b>News Classifier Can Classify 4 Types of Categories</b></p>
+         <ul>
+         	<li>
+         		Business News
+         	</li>
+         	<li>
+         		Entertiment News
+         	</li>
+         	<li>
+         		Science and Techonology News
+         	</li>
+         	<li>
+         		Health News
+         	</li>
+         </ul>
+     </p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Follow me on GitHub</a>
+            <a href="#" class="btn btn-secondary my-2">Linkedin</a>
+          </p>
+         
+		</div>
+
+		<div class="col-sm-6">
+			<div class="container">
+				<form method="POST" action="/newsclassifier">
+				<textarea name="message" class="form-control" cols="8" rows="8"></textarea>
+				<br>
+				<button class="btn btn-success" type="submit">Classify</button>
+
+				<button style="margin-left: 10px;" class="btn btn-danger" type="reset">Reset</button>
+
+			</form>
+			<br>
+
+			<div class="container">
+				{% if prediction == 'b' %}
+					<div class="container">
+						<p class="alert alert-success"><b>Business News</b></p>
+					</div>
+				{% elif prediction == 't' %}
+					<div class="container">
+						<p class="alert alert-danger"><b>Science And Technology News</b></p>
+					</div>
+				{% elif prediction == 'e' %}
+					<div class="container">
+						<p class="alert alert-warning"><b>Entertainment News</b></p>
+					</div>
+				{% elif prediction == 'm' %}
+				<div class="container">
+					<p class="alert alert-primary"><b>Health News</b></p>
+				</div>
+				{% endif %}
+			</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>	
+	<!-- form area -->
+	
+
+{% endblock %}

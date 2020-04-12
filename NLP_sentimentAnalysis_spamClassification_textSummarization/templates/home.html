@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block content %}
+     <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Natural Languages Processing (NLP) examples in Web Using Flask</h1>
+          <p class="lead text-black">
+            <h3><b>Himanshu Tripathi</b></h3>
+            <p>
+          Machine Learning and Data Science enthusiast, Android Developer, programmer and always willing to learn and work across new technologies and domains.</p></p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Follow me on GitHub</a>
+            <a href="#" class="btn btn-secondary my-2">Linkedin</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/1.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">Sentiment analysis refers to the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/nlpsentiment">
+                        <button type="button" class="btn btn-sm btn btn-success">Sentiment Analysis</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">Himanshu Tripathi</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/3.png" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">"Ham" is e-mail that is not Spam. It should be considered a shorter, snappier synonym for "non-spam". Its usage is particularly common among anti-spam software developers, and not widely known elsewhere</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/nlpspam">
+                        <button type="button" class="btn btn-sm btn btn-danger">Spam Classification</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">Himanshu Tripathi</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/2.jpg" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">Text summarization refers to the technique of shortening long pieces of text. The intention is to create a coherent and fluent summary having only the main points outlined in the document. </p>
+                 <br>
+                  <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                      <a href="/nlpsummarize">
+                        <button type="button" class="btn btn-sm btn btn-warning">Summarizer</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">Himanshu Tripathi</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="static/images/4.jpg" alt="Card image cap" style="height: 250px;">
+                <div class="card-body">
+                  <p class="card-text">News Classifier. This classifier categorizes news articles. It was trained with 10000 hand picked articles from major news sources per category. The text used was a combination of each article's title, description and scraped and cleaned text.</p>
+                 <br>
+                  <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                      <a href="/newsclf">
+                        <button type="button" class="btn btn-sm btn btn-warning">News Classifier</button>
+                      </a>
+                    </div>
+                    <small class="text-muted">Himanshu Tripathi</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+
+{%  endblock %}
+   
